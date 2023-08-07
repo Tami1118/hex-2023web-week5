@@ -1,7 +1,12 @@
 @import 'bootstrap';
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './utils/variables';
+@import './utils/typography';
+@import './utils/helper';
 
+@import './base/reboot';
 
-@import './pages/index.scss';
+// @import './layout/header.scss';
+// @import './layout/footer.scss';
+
+// @import './pages/index.scss';
