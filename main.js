@@ -1,4 +1,6 @@
 import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+
+// bootstrap 載入 javascript
+import './node_modules/bootstrap/dist/js/bootstrap.min';
 
 console.log("Hello world!");
