@@ -1,0 +1,91 @@
+<div class="modal fade" id="editAdminModal" tabindex="-1" aria-labelledby="editAdminModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h1 class="modal-title fw-bold fs-6" id="editAdminModalLabel">Edit Admin</h1>
+        <button type="button" class="btn-close p-0 m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form action="index.html">
+          <!-- item 1 -->
+          <div class="pb-6 border-bottom">
+            <p class="mb-4 fs-5">Account</p>
+            <div class="mb-4">
+              <label for="accountName" class="form-label fs-2">Name</label>
+              <input type="tel" class="form-control mt-1" id="accountName" placeholder="Emir Wicks" disabled>
+            </div>
+            <div>
+              <label for="accountEmail" class="form-label fs-2">Email</label>
+              <input type="password" class="form-control mt-1" id="accountEmail" placeholder="emir.wicks@mail.com" disabled>
+            </div>
+          </div>
+          
+          <!-- item 2 -->
+          <div class="py-6 border-bottom">
+            <p class="mb-4 fs-5">Unverified</p>
+            <p class="d-flex align-items-center mb-4h"><span class="material-icons fs-5 me-2">check_circle</span>Verified <span class="ms-auto">2020/4/12</span></p>
+            <button class="btn btn-outline-gray100 w-100">Send Verification Mail</button>
+          </div>
+
+          <div class="py-6 border-bottom">
+            <p class="mb-4 fs-5">Access Level</p>
+            <select class="form-select">
+              <option selected class="">-Choose access level-</option>
+              <option value="1">Admin</option>
+              <option value="2">Guest</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+
+          <!-- item 3 -->
+          <div class="py-6 border-bottom">
+            <p class="mb-4 fs-5">Custom Access</p>
+            <div class="d-flex flex-column gap-5">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="lecture">
+                <label class="form-check-label" for="lecture">
+                  Lecture
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="coupon">
+                <label class="form-check-label" for="coupon">
+                  Coupon
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="message">
+                <label class="form-check-label" for="message">
+                  Message
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="setting">
+                <label class="form-check-label" for="setting">
+                  Setting
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="task">
+                <label class="form-check-label" for="task">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 4 -->
+          <div class="py-6">
+            <p class="mb-4 fs-5">Deactivate Account</p>
+            <p class="text-danger d-flex align-items-center mb-4h"><span class="material-icons fs-5 text-danger me-2">warning</span>This cannot be undone!</p>
+            <button class="btn btn-outline-danger w-100">Deactivate This Account</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
