@@ -1,15 +1,125 @@
-$spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: $spacer * .25,  // 4px
-  2: $spacer * .5,   // 8px
-  3: $spacer * .75,  // 12px
-  4: $spacer * 1,    // 16px
-  5: $spacer * 1.25, // 20px
-  6: $spacer * 1.5,  // 24px
-  7: $spacer * 1.75, // 28px
-  8: $spacer * 2,    // 32px
-  9: $spacer * 2.25, // 36px
+// color
+$primary: #198754;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-400: #ced4da;
+$gray-600: #6c757d;
+$gray-900: #212529;
+$gray-other: #00000062;
+$black:    #000;
+
+
+// size
+$size-base: 1rem;
+$size-h: $size-base * .125;   // 2x
+$size-1: $size-base * .25;    // 4x
+$size-2: $size-base * .5;     // 8px
+$size-3: $size-base * .75;    // 12px
+$size-3h: $size-base * .875;  // 14px
+$size-4: $size-base;           // 16px
+$size-5: $size-base * 1.25;    // 20px
+$size-6: $size-base * 1.5;     // 24px
+$size-7: $size-base * 1.75;    // 28px
+$size-8: $size-base * 2;       // 32px
+$size-9: $size-base * 2.25;    // 36px
+$size-10: $size-base * 2.5;    // 40px
+$size-11: $size-base * 2.75;   // 44px
+$size-12: $size-base * 3;      // 48px
+
+
+$font-sizes: (
+  1: $size-1,
+  2: $size-2,
+  3: $size-3,
+  3h: $size-3h,
+  4: $size-4,
+  5: $size-5,
+  6: $size-6,
+  7: $size-7,
+  8: $size-8,
+  9: $size-9,
+  10: $size-10,
+  11: $size-11,
+  12: $size-12,
 );
 
-$pagination-border-color: $success;
+
+// spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  h: $spacer * .125,   // 2px
+  1: $spacer * .25,    // 4px
+  2: $spacer * .5,     // 8px
+  3: $spacer * .75,    // 12px
+  4: $spacer * 1,      // 16px
+  4h: $spacer * 1.125, // 18px
+  5: $spacer * 1.25,   // 20px
+  6: $spacer * 1.5,    // 24px
+  7: $spacer * 1.75,   // 28px
+  8: $spacer * 2,      // 32px
+  9: $spacer * 2.25,   // 36px
+  10: $spacer * 2.5,   // 40px
+  11: $spacer * 2.75,  // 44px
+  12: $spacer * 3,     // 48px
+);
+
+
+// Pagination
+$pagination-border-color: $primary;
+$pagination-border-radius: $size-h;
+
+
+// Navbar
+$nav-link-font-weight: bold;
+$nav-link-color: $gray-900;
+
+
+// Button
+$btn-border-radius: $size-h;
+
+
+// Modal
+$modal-admin: 480px;
+$modal-content-border-width: none;
+$modal-content-border-radius: 0; 
+$modal-inner-padding: $size-8;
+
+
+// Table
+$table-cell-padding-x: $size-2;
+$table-cell-padding-y: $size-4;
+$table-hover-bg-factor: .025;
+
+
+// form
+$form-label-font-size: 14px;
+$form-label-color: $gray-900;
+
+$input-border-color: $gray-900;
+$input-border-radius: $size-h;
+
+$input-disabled-color: $gray-100;
+$input-disabled-bg: $input-disabled-color;
+$input-disabled-border-color: transparent;
+
+$form-select-color: $gray-600;
+$form-select-border-radius: $size-h;
+$form-select-border-color: $gray-900;
+
+$form-check-input-border: 1px solid $gray-900;
+
+
+// accordion
+$accordion-padding-y: 0;
+$accordion-padding-x: 0;
+$accordion-button-active-bg: white;
+$accordion-border-color:none;
+$accordion-button-focus-box-shadow: none;
+
+// === cannot adjust item ===
+// btn-close padding, margin
+// add new btn's border color
+// form check input border color
+// form footer's padding
+// accordion's arrow icon

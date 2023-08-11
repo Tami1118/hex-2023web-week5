@@ -1,37 +1,42 @@
-
-.bg-gray100{
+.bg-gray100 {
   background-color: $gray-100;
 }
 
-.person__img{
-  width: 40px;
-  height: 40px;
-}
-
-.person__email{
-  font-size: 14px;
+.text-gray600{
   color: $gray-600;
 }
 
-.nav li:hover{
-  span, a{
-    color: $success;
+.sidebar li {
+  padding-left: $size-7;
+  border-left: 4px solid transparent;
+
+  &:hover {
+    color: $primary;
   }
 }
 
-.admin-table td{
-  padding-top: 15px;
-  padding-bottom: 15px;
+.sidebar .active {
+  border-left: 4px solid $primary;
+  color: $primary;
+  
+  &>a{
+    color: $primary;
+  }
 }
 
-.admin-table button:hover span{
-  color: $success;
+.btn-icon {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &:hover{
+    color: $primary;
+  }
 }
 
-.table-no{
-  font-weight: 400;
-}
-
-.page-size{
-  font-size: 20px;
+.page-item.active {
+  &>a {
+    background-color: $primary;
+    color: white;
+  }
 }
