@@ -11,9 +11,9 @@
 <body>
   <div class="vh-100">
     <div class="d-flex h-100">
-      <div class="sidebar w-25 bg-gray100">
-        <div class="d-flex flex-column h-100 p-8">
-          <a class="navbar-brand mb-8" href="#">
+      <div class="w-25 bg-gray100">
+        <div class="sidebar h-100 d-flex flex-column">
+          <a class="navbar-brand m-8" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="151" height="40" viewBox="0 0 151 40">
               <defs>
                 <clipPath id="clip-path">
@@ -37,10 +37,10 @@
               </g>
             </svg>
           </a>
-          <ul class="nav flex-column gap-6">
+          <ul class="nav flex-column mt-0 gap-4">
             <li class="nav-item d-flex align-items-center">
               <span class="material-icons">insert_chart</span>
-              <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              <a class="nav-link" href="#">Dashboard</a>
             </li>
             <li class="nav-item d-flex align-items-center">
               <span class="material-icons">question_answer</span>
@@ -54,257 +54,95 @@
               <span class="material-icons">video_library</span>
               <a class="nav-link" href="#">Course</a>
             </li>
-            <li class="nav-item d-flex align-items-center">
+            <li class="nav-item d-flex align-items-center active">
               <span class="material-icons">people</span>
-              <a class="nav-link" href="#">Admin</a>
+              <a class="nav-link" href="index.html">Admin</a>
             </li>
             <li class="nav-item d-flex align-items-center">
               <span class="material-icons">settings</span>
               <a class="nav-link" href="#">Settings</a>
             </li>
           </ul>
-
-          <div class="mt-auto d-flex align-items-center">
-            <img class="person__img rounded-circle" src="../assets/images/andychen.jpeg">
+          <div class="mt-auto d-flex align-items-center m-8">
+            <img class="rounded-circle img-fluid" style="height: 40px; width: 40px;" src="../assets/images/andychen.jpeg">
             <div class="ms-4">
-              <div class="mb-1">Andy Chen</div>
-              <div class="person__email">andy0401@mail.com</div>
+              <div class="mb-1 fw-bold">Andy Chen</div>
+              <div class="text-gray600 fs-3h">andy0401@mail.com</div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="content w-75 overflow-y-scroll">
-        <nav class="navbar navbar-expand-lg p-0">
-          <div class="container p-8 m-0">
-            <a class="navbar-brand fw-bold" href="#">Admin</a>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn d-flex align-middle" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <span class="material-icons me-2 text-success">add</span>
-              Add New Admin
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Admin</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
+        <header>
+          <nav class="navbar navbar-expand-lg p-0">
+            <div class="container p-8 m-0">
+              <h1 class="navbar-brand fw-bold fs-6 me-12" href="#">Admin</h1>
+              <button class="btn border-0 d-flex align-items-center fw-bold" data-bs-toggle="modal" data-bs-target="#newAdminModal">
+                <span class="material-icons text-success me-2">add</span>
+                Add New Admin
+              </button>
+              <button type="button" class="btn-icon ms-auto">
+                <span class="material-icons">search</span>
+              </button>
+              <button type="button" class="btn-icon ms-4">
+                <span class="material-icons">notifications_active</span>
+              </button>
             </div>
-
-
-
-
-
-            <button type="button" class="btn ms-auto">
-              <span class="material-icons">search</span>
-            </button>
-            <button type="button" class="btn">
-              <span class="material-icons">notifications_active</span>
-            </button>
-          </div>
-        </nav>
-
-
-        <div class="container px-8">
-          <table class="admin-table table table-hover">
-            <thead>
-              <tr class="py-3">
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Verified</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-              <tr class="align-middle">
-                <th class="table-no">#1</th>
-                <td>Emir Wicks</td>
-                <td>emir.wicks@mail.com</td>
-                <td>Yes</td>
-                <td class="d-flex">
-                  <button class="p-0 border-0 bg-transparent me-6">
-                    <span class="material-icons">visibility</span>
-                  </button>
-                  <button class="p-0 border-0 bg-transparent">
-                    <span class="material-icons">edit</span>
-                  </button>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
-        </div>
-        <div class="px-8">
-          <nav aria-label="Page navigation example ">
-            <ul class="pagination justify-content-end">
-              <li class="page-item">
-                <a class="page-link" href="#">
-                  <span class="material-icons page-size text-success">chevron_left</span>
-                </a>
-              </li>
-              <li class="page-item"><a class="page-link fz-4" href="#">1</a></li>
-              <li class="page-item"><a class="page-link fz-4" href="#">2</a></li>
-              <li class="page-item"><a class="page-link fz-4" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">
-                  <span class="material-icons page-size text-success">chevron_right</span>
-                </a>
-              </li>
-            </ul>
           </nav>
-        </div>
+          <%- include('./components/addAdminModal'); -%>
+        </header>
 
+        <main>
+          <div class="container px-8">
+            <!-- table -->
+            <table class="table table-hover mb-8">
+              <thead>
+                <tr class="py-3">
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Verified</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="fw-normal">#1</th>
+                  <td>Emir Wicks</td>
+                  <td>emir.wicks@mail.com</td>
+                  <td>Yes</td>
+                  <td>
+                    <button class="btn-icon me-6" data-bs-toggle="modal" data-bs-target="#viewAdminModal">
+                      <span class="material-icons">visibility</span>
+                    </button>
+                    <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#editAdminModal">
+                      <span class="material-icons">edit</span>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <%- include('./components/viewAdminModal'); -%>
+            <%- include('./components/editAdminModal'); -%>
+
+
+            <!-- pagination -->
+            <nav aria-label="admintablepagination">
+              <ul class="pagination justify-content-end">
+                <li class="page-item"><a class="page-link" href="#"><span class="material-icons fs-3 fw-bold">chevron_left</span></a></li>
+                <li class="page-item active"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#"><span class="material-icons fs-3 fw-bold">chevron_right</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </main>
 
       </div>
     </div>
+
 
     <!-- 
     <%- include('./layout/header'); -%>
